@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Megan Oliver — Behavioral Marketing Strategist</title>
+  <meta name="description" content="Get in touch with Megan Oliver — Behavioral Marketing Strategist. Available for senior strategy roles and consulting engagements." />
+  <link rel="canonical" href="https://www.meganoliver.com/contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      min-height: calc(100vh - var(--nav-h));
+    }
+
+    /* LEFT PANEL */
+    .contact-left {
+      background: var(--green);
+      padding: 6rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadeUp 0.7s 0.1s both;
+    }
+
+    .contact-eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-left h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 4vw, 3.75rem);
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.05;
+      margin-bottom: 1.75rem;
+    }
+
+    .contact-left-body {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(245,242,238,0.7);
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-left-body strong {
+      font-weight: 500;
+      color: var(--cream);
+    }
+
+    .contact-direct {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .contact-direct-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .contact-direct-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .contact-direct-value {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-direct-value:hover { color: #fff; }
+
+    /* RIGHT PANEL */
+    .contact-right {
+      background: var(--white);
+      padding: 6rem 4rem;
+      animation: fadeUp 0.7s 0.25s both;
+    }
+
+    .form-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .form-field label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+    }
+
+    .form-field input,
+    .form-field textarea,
+    .form-field select {
+      background: var(--cream);
+      border: 1px solid var(--rule);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      padding: 0.8rem 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+      appearance: none;
+      border-radius: 0;
+    }
+
+    .form-field input::placeholder,
+    .form-field textarea::placeholder { color: var(--ink-light); opacity: 0.5; }
+
+    .form-field input:focus,
+    .form-field textarea:focus,
+    .form-field select:focus { border-color: var(--green); }
+
+    .form-submit {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    .form-success {
+      display: none;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--green);
+      padding: 1rem 0;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-left { padding: 4rem 1.5rem; }
+      .contact-right { padding: 4rem 1.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <nav>
+    <a href="index.html" class="nav-logo">Megan Oliver</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-layout">
+    <div class="contact-left">
+      <div>
+        <p class="contact-eyebrow">Get In Touch</p>
+        <h1>Let's Talk<br/>Strategy.</h1>
+        <p class="contact-left-body">
+          I'm open to senior behavioral marketing roles in Chicago, Atlanta, Dallas, Austin, or NYC — and occasionally take on <strong>consulting engagements</strong> where the brief is strategic, not executional.
+        </p>
+        <p class="contact-left-body">
+          If you're building a marketing function that needs a sharper behavioral foundation, I'd like to hear about it.
+        </p>
+      </div>
+      <div class="contact-direct">
+        <div class="contact-direct-item">
+          <span class="contact-direct-label">Email</span>
+          <a href="/cdn-cgi/l/email-protection#2e464b4242416e434b494f40414247584b5c004d4143" class="contact-direct-value"><span class="__cf_email__" data-cfemail="b9d1dcd5d5d6f9d4dcded8d7d6d5d0cfdccb97dad6d4">[email&#160;protected]</span></a>
+        </div>
+        <div class="contact-direct-item">
+          <span class="contact-direct-label">LinkedIn</span>
+          <a href="https://linkedin.com" class="contact-direct-value" target="_blank">linkedin.com/in/meganoliver</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <div class="form-title">Send a Message</div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label>First Name</label>
+            <input type="text" placeholder="Jane" required />
+          </div>
+          <div class="form-field">
+            <label>Last Name</label>
+            <input type="text" placeholder="Smith" />
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" placeholder="jane@company.com" required />
+        </div>
+        <div class="form-field">
+          <label>Organization (optional)</label>
+          <input type="text" placeholder="Company or Agency" />
+        </div>
+        <div class="form-field">
+          <label>What brings you here?</label>
+          <select>
+            <option value="" disabled selected>Select one</option>
+            <option>Exploring a role or opportunity</option>
+            <option>Strategy consulting inquiry</option>
+            <option>Just want to connect</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn--green form-submit">Send Message →</button>
+        <div class="form-success" id="formSuccess">Message sent — I'll be in touch.</div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Megan Oliver</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Megan Oliver · Behavioral Marketing Strategist · meganoliver.com</span>
+  </footer>
+
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode
