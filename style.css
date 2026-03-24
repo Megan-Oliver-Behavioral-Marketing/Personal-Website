@@ -1,0 +1,64 @@
+:root {
+  --green: #2d5a4c;
+  --green-mid: #4a7c6d;
+  --green-pale: #f4f7f6;
+  --gold: #c5a35d;
+  --ink: #1a1a1a;
+  --ink-mid: #4a4a4a;
+  --ink-light: #808080;
+  --cream: #fbf9f6;
+  --white: #ffffff;
+  --rule: rgba(0,0,0,0.08);
+  --nav-h: 70px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: 'DM Sans', sans-serif; 
+  background: var(--cream); 
+  color: var(--ink); 
+  line-height: 1.6;
+}
+
+nav {
+  height: var(--nav-h);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.nav-links { display: flex; list-style: none; gap: 2.5rem; }
+.nav-links a {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--ink-light);
+}
+
+.section { padding: 8rem 3.5rem; }
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: var(--green);
+  color: var(--white);
+}
