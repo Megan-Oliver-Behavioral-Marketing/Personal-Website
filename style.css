@@ -2,9 +2,9 @@
   --green: #2d5a4c;
   --cream: #fbf9f6;
   --ink: #1a1a1a;
-  --ink-light: #666666;
+  --dark-grey: #1f2124; /* That dark color from your screenshot */
   --white: #ffffff;
-  --rule: rgba(0,0,0,0.08);
+  --ink-light: #a0a0a0;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -12,67 +12,52 @@
 body { 
   font-family: 'DM Sans', sans-serif; 
   background: var(--cream); 
-  color: var(--ink); 
-  line-height: 1.6;
 }
 
-/* THE HEADER FIX */
+/* THE SCREENSHOT HEADER STYLE */
 header {
-  background: var(--white);
-  border-bottom: 1px solid var(--rule);
-  padding: 1.5rem 3.5rem;
+  background: var(--dark-grey);
+  padding: 1rem 4rem;
   display: flex;
-  justify-content: space-between; /* This pushes your name to the left and links to the right */
+  justify-content: space-between;
   align-items: center;
+  /* This adds the rounded corners from your screenshot */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 1rem 1rem 0 1rem;
 }
 
 header a.logo {
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
+  color: var(--white);
   text-decoration: none;
-  color: var(--ink);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
 }
 
-/* This part kills the bullets and makes it horizontal */
 nav ul {
-  display: flex; 
-  list-style: none; /* This removes the bullet points */
-  gap: 2rem; /* This creates even spacing between the links */
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--ink-light);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: color 0.2s;
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 400;
+  transition: opacity 0.2s;
 }
 
 nav a:hover {
-  color: var(--green);
+  opacity: 0.7;
 }
 
-/* THE FOOTER CLEANUP */
+/* Footer cleanup to match */
 footer {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   text-align: center;
-  background: var(--white);
-  border-top: 1px solid var(--rule);
-  margin-top: 5rem;
-}
-
-footer p {
-  font-size: 0.7rem;
   color: var(--ink-light);
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-}
-
-/* Content Container */
-main, .section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 6rem 2rem;
+  font-size: 0.8rem;
 }
