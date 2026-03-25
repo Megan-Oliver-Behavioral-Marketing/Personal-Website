@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Megan Oliver — Behavioral Marketing Strategist</title>
+  <meta name="description" content="I'm a Behavioral Marketing Strategist with 10 years of experience helping brands understand how people make decisions and build strategies that work at the moment of action." />
+  <link rel="canonical" href="https://www.meganoliver.com/about.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-hero {
+      background: var(--ink);
+      padding: 6rem 3.5rem 5rem;
+      animation: fadeUp 0.7s 0.1s both;
+    }
+
+```
+.page-hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 1.25rem;
+}
+
+.page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.05;
+  max-width: 700px;
+}
+
+.page-hero h1 em { font-style: italic; color: rgba(255,255,255,0.45); }
+
+/* ── ABOUT BODY ── */
+.about-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.about-sidebar {}
+
+.sidebar-block {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.sidebar-block:first-child { border-top: 1px solid var(--rule); }
+
+.sidebar-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.4rem;
+}
+
+.sidebar-value {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--ink-mid);
+}
+
+.sidebar-value a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.sidebar-value a:hover { text-decoration: underline; }
+
+.about-content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  margin-top: 2.75rem;
+}
+
+.about-content h2:first-child { margin-top: 0; }
+
+.about-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--ink-mid);
+  margin-bottom: 1.25rem;
+}
+
+.about-content p strong { font-weight: 500; color: var(--ink); }
+
+.pullquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.45rem;
+  font-style: italic;
+  color: var(--green);
+  line-height: 1.45;
+  border-left: 3px solid var(--green);
+  padding-left: 1.5rem;
+  margin: 2.25rem 0;
+}
+
+.focus-list {
+  list-style: none;
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.focus-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+.focus-list li::before {
+  content: '—';
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .page-hero { padding: 4rem 1.5rem 3.5rem; }
+  .about-layout { grid-template-columns: 1fr; gap: 3rem; }
+}
+```
+
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header class="main-header">
+    <a href="index.html" class="nav-logo logo">Megan Oliver</a>
+    <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <p class="page-hero-eyebrow">About</p>
+    <h1>Behavioral Marketing<br/><em>Strategist.</em></h1>
+  </div>
+
+  <section class="section section--white">
+    <div class="about-layout">
+
+```
+  <aside class="about-sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-label">Title</div>
+      <div class="sidebar-value">Behavioral Marketing Strategist</div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-label">Experience</div>
+      <div class="sidebar-value">10 Years</div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-label">Based In</div>
+      <div class="sidebar-value">Memphis, TN</div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-label">Focus Areas</div>
+      <div class="sidebar-value">Decision-Making<br/>Conversion Behavior<br/>Brand Strategy<br/>Marketing Systems</div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-label">Open To</div>
+      <div class="sidebar-value">Senior strategy roles in Chicago, Atlanta, Dallas, Austin, or NYC</div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-label">Connect</div>
+      <div class="sidebar-value">
+        <a href="https://linkedin.com">LinkedIn</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="about-content">
+    <h2>Who I Am</h2>
+    <p>
+      I'm a Behavioral Marketing Strategist with 10 years of experience building strategies that close the gap between audience awareness and audience action. That gap is almost always behavioral — and it requires a different kind of analysis than most marketing teams apply to it.
+    </p>
+    <p>
+      I don't start with demographics or personas. I start with a more commercially useful question: <strong>what conditions need to exist for this person to act — and what's currently in the way?</strong>
+    </p>
+
+    <div class="pullquote">
+      "Context isn't a detail. It's the variable that makes the same person behave completely differently."
+    </div>
+
+    <h2>What I Focus On</h2>
+    <p>
+      My work is grounded in three areas that tend to determine whether a strategy actually moves the business:
+    </p>
+    <ul class="focus-list">
+      <li><strong>Decision-making:</strong> How people evaluate, hesitate, and ultimately choose — and how strategy can be designed around those patterns instead of assumed ones.</li>
+      <li><strong>Conversion behavior:</strong> The distance between brand awareness and action is behavioral, not informational. I work on identifying what's blocking action and fixing it at the strategic level, not just the executional one.</li>
+      <li><strong>Marketing systems:</strong> Good strategy that can't be operationalized doesn't help anyone. I build frameworks, campaign structures, and content systems that teams can actually run.</li>
+    </ul>
+
+    <h2>Why This Approach Works</h2>
+    <p>
+      Most marketing strategies are built to communicate, not to convert. They're optimized for reach, recall, and creative quality — without a clear theory of what will actually change behavior downstream.
+    </p>
+    <p>
+      Behavioral strategy forces that question earlier in the process, where it's cheaper to answer. It changes how you segment, how you sequence, what you say in each moment, and what you measure. Applied consistently, it makes campaigns more efficient and brand-building more durable.
+    </p>
+
+    <div style="margin-top:2.5rem;">
+      <a href="work.html" class="btn btn--green">See My Work →</a>
+    </div>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Megan Oliver</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Megan Oliver · Behavioral Marketing Strategist · meganoliver.com</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
