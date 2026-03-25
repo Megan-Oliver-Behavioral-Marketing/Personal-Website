@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Rebuilding Engagement Through Decision-Focused Communication | Megan Oliver</title>
+  <meta name="description" content="A behavioral marketing case study showing how decision-focused communication increased engagement, participation, and clarity across channels." />
+  <link rel="canonical" href="https://www.meganoliver.com/case-study-engagement.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+```
+/* ── HERO ── */
+.cs-hero {
+  background: var(--ink);
+  padding: 6rem 3.5rem 5rem;
+  animation: fadeUp 0.7s 0.1s both;
+}
+
+.cs-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+.cs-back:hover { color: rgba(255,255,255,0.7); }
+
+.cs-hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--green-mid);
+  margin-bottom: 1.25rem;
+}
+
+.cs-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 4vw, 3.75rem);
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1.08;
+  max-width: 780px;
+  margin-bottom: 2.5rem;
+}
+
+/* ── AT A GLANCE ── */
+.glance-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5px;
+  background: rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.glance-item {
+  background: var(--ink);
+  padding: 1.25rem 1.5rem;
+}
+
+.glance-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 0.35rem;
+}
+
+.glance-value {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: rgba(245,242,238,0.8);
+  line-height: 1.4;
+}
+
+/* ── BODY LAYOUT ── */
+.cs-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 5rem;
+  align-items: start;
+  padding: 5rem 3.5rem;
+  background: var(--white);
+}
+
+/* ── STICKY TOC ── */
+.cs-toc {
+  position: sticky;
+  top: calc(var(--nav-h) + 2rem);
+}
+
+.toc-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.toc-list a {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  text-decoration: none;
+  padding: 0.4rem 0;
+  transition: color 0.2s;
+  line-height: 1.4;
+}
+
+.toc-list a:hover { color: var(--green); }
+
+/* ── ARTICLE CONTENT ── */
+.cs-article {}
+
+.cs-section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.cs-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cs-section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.75rem;
+}
+
+.cs-article h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.cs-article h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  margin-top: 2rem;
+}
+
+.cs-article p {
+  font-size: 0.975rem;
+  font-weight: 300;
+  line-height: 1.85;
+  color: var(--ink-mid);
+  margin-bottom: 1.1rem;
+}
+
+.cs-article p strong { font-weight: 500; color: var(--ink); }
+
+.cs-article ul, .cs-article ol {
+  margin: 0.75rem 0 1.25rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cs-article li {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--ink-mid);
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.cs-article li::before {
+  content: '—';
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--green);
+  flex-shrink: 0;
+}
+
+/* ── CALLOUT BOX ── */
+.cs-callout {
+  background: var(--green-pale);
+  border-left: 3px solid var(--green);
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0;
+}
+
+.cs-callout-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.cs-callout p {
+  font-size: 0.9rem;
+  color: var(--ink-mid);
+  margin-bottom: 0;
+}
+
+.cs-callout p strong { color: var(--ink); }
+
+/* ── BLOCKQUOTE ── */
+.cs-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--green);
+  line-height: 1.5;
+  border-left: 3px solid var(--green);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* ── TRANSLATION NOTE ── */
+.cs-translation {
+  background: var(--ink);
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0;
+}
+
+.cs-translation-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 0.5rem;
+}
+
+.cs-translation p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(245,242,238,0.65);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ── FROM/TO ── */
+.shift-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--rule);
+  margin: 1.5rem 0;
+}
+
+.shift-col {
+  background: var(--cream);
+  padding: 1.5rem;
+}
+
+.shift-col-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.shift-col-label.to { color: var(--green); }
+
+.shift-col ul { margin: 0; }
+
+/* ── OUTCOMES ── */
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: var(--rule);
+  margin: 1.5rem 0;
+}
+
+.outcome-card {
+  background: var(--green);
+  padding: 2rem 1.75rem;
+  text-align: center;
+}
+
+.outcome-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--cream);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.outcome-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 0.5rem;
+}
+
+.outcome-note {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.5;
+}
+
+/* ── INLINE LINK ── */
+.cs-link {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45,90,69,0.3);
+  transition: border-color 0.2s;
+}
+.cs-link:hover { border-color: var(--green); }
+
+/* ── NEXT CASE / CTA ── */
+.cs-footer-cta {
+  background: var(--cream);
+  padding: 4rem 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-top: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+
+.cs-footer-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 0.4rem;
+}
+
+.cs-footer-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .cs-hero { padding: 4rem 1.5rem 3.5rem; }
+  .glance-strip { grid-template-columns: repeat(2, 1fr); }
+  .cs-body { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; gap: 2.5rem; }
+  .cs-toc { position: static; }
+  .shift-grid { grid-template-columns: 1fr; }
+  .outcomes-grid { grid-template-columns: 1fr; }
+  .cs-footer-cta { padding: 3rem 1.5rem; }
+}
+```
+
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header class="main-header">
+    <a href="index.html" class="nav-logo logo">Megan Oliver</a>
+    <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+
+  <div class="cs-hero">
+    <a href="work.html" class="cs-back">← Back to Work</a>
+    <p class="cs-hero-eyebrow">Case Study · Community / Nonprofit</p>
+    <h1>Rebuilding Engagement Through<br/>Decision-Focused Communication</h1>
+
+```
+<div class="glance-strip">
+  <div class="glance-item">
+    <div class="glance-label">Industry</div>
+    <div class="glance-value">Community / Nonprofit</div>
+  </div>
+  <div class="glance-item">
+    <div class="glance-label">Focus</div>
+    <div class="glance-value">Behavioral Marketing Strategy</div>
+  </div>
+  <div class="glance-item">
+    <div class="glance-label">Core Problem</div>
+    <div class="glance-value">Engagement breakdown at the decision level</div>
+  </div>
+  <div class="glance-item">
+    <div class="glance-label">Approach</div>
+    <div class="glance-value">Decision-focused communication system redesign</div>
+  </div>
+  <div class="glance-item">
+    <div class="glance-label">Timeframe</div>
+    <div class="glance-value">3 months</div>
+  </div>
+</div>
+```
+
+  </div>
+
+  <!-- BODY -->
+
+  <div class="cs-body">
+
+```
+<!-- TOC -->
+<aside class="cs-toc">
+  <div class="toc-label">In This Case Study</div>
+  <ul class="toc-list">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#problem">The Problem</a></li>
+    <li><a href="#diagnosis">Behavioral Diagnosis</a></li>
+    <li><a href="#not-messaging">Why Not a Messaging Fix</a></li>
+    <li><a href="#shift">Strategic Shift</a></li>
+    <li><a href="#what-changed">What Changed</a></li>
+    <li><a href="#outcomes">Outcomes</a></li>
+    <li><a href="#insight">Key Insight</a></li>
+  </ul>
+</aside>
+
+<!-- ARTICLE -->
+<article class="cs-article">
+
+  <div class="cs-section" id="overview">
+    <div class="cs-section-label">Overview</div>
+    <h2>Engagement Was Consistent.<br/>Participation Wasn't.</h2>
+    <p>
+      The organization had consistent activity — but inconsistent participation. The issue wasn't effort. It was structure.
+    </p>
+    <p>
+      Communication, programming, and execution weren't designed to guide people toward action in the moment they encountered the message. My role was to diagnose where behavior was breaking down and rebuild the system around <strong>how people actually decide to participate</strong> — not how leadership assumed they did.
+    </p>
+    <p>
+      Learn more about my approach to <a href="about.html" class="cs-link">behavioral marketing →</a>
+    </p>
+  </div>
+
+  <div class="cs-section" id="problem">
+    <div class="cs-section-label">The Problem</div>
+    <h2>People Weren't Disengaged.<br/>They Were Unclear.</h2>
+    <p>
+      Engagement wasn't low because people weren't interested. It was low because the path to action was unclear.
+    </p>
+    <ul>
+      <li>Communications were inconsistent across platforms</li>
+      <li>Messaging between services, events, and outreach wasn't aligned</li>
+      <li>Members didn't know what was happening, when, or why it mattered</li>
+      <li>Visitors had limited visibility into next steps</li>
+      <li>Social channels weren't contributing to participation</li>
+    </ul>
+    <p>
+      People weren't disengaged from the organization. They were disengaged from <strong>what to do, when to do it, and why it mattered now.</strong>
+    </p>
+  </div>
+
+  <div class="cs-section" id="diagnosis">
+    <div class="cs-section-label">Behavioral Diagnosis</div>
+    <h2>The Breakdown Was at<br/>the Decision Level.</h2>
+    <p>
+      The core issue was not awareness. Communication was built around information, announcements, and isolated updates — but not around timing, reinforcement, or clear next steps.
+    </p>
+    <p>
+      There was no structured reason for someone to act in the moment they saw the message.
+    </p>
+
+    <div class="shift-grid">
+      <div class="shift-col">
+        <div class="shift-col-label">Communication was built around</div>
+        <ul>
+          <li>Information</li>
+          <li>Announcements</li>
+          <li>Isolated updates</li>
+        </ul>
+      </div>
+      <div class="shift-col">
+        <div class="shift-col-label to">But not around</div>
+        <ul>
+          <li>Timing</li>
+          <li>Reinforcement</li>
+          <li>Clear next steps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-section" id="not-messaging">
+    <div class="cs-section-label">Why This Wasn't a Messaging Problem</div>
+    <h2>Better Announcements Weren't<br/>Going to Fix This.</h2>
+    <p>
+      Leadership assumed this was informational: better announcements, more reminders, more visibility. That was partially right — but incomplete.
+    </p>
+    <p>
+      Announcements answer <em>what is happening.</em> They don't answer why this matters to me right now, what I'm supposed to do next, or how this fits into what I'm already seeking.
+    </p>
+    <p>
+      For this audience — people navigating belonging, rest, and emotional or spiritual needs — <strong>the decision to participate was primarily motivational, not logistical.</strong> The system failed because it didn't create relevance at the moment of encounter, a clear trigger for action, or alignment between internal motivation and external invitation.
+    </p>
+    <p>
+      So instead of polishing copy, I redesigned the decision architecture. Email segmentation moved from "what leadership wants to promote" to "what different behavioral segments need to decide." High-intent repeat viewers saw messaging around consistency and rootedness. First-time visitors saw low-pressure, test-fit-this-week invitations.
+    </p>
+    <div class="cs-quote">
+      "The result: communication that met people at their real decision point — not the one leadership assumed."
+    </div>
+
+    <div class="cs-translation">
+      <div class="cs-translation-label">Commercial Translation</div>
+      <p>The same decision architecture — trigger timing, friction reduction, and narrative alignment — directly maps to trial, repeat use, and subscription decisions in commercial environments.</p>
+    </div>
+  </div>
+
+  <div class="cs-section" id="shift">
+    <div class="cs-section-label">Strategic Shift</div>
+    <h2>From Getting Information Out<br/>to Guiding Behavior.</h2>
+    <p>
+      Instead of increasing content output, we redesigned the decision environment.
+    </p>
+    <div class="shift-grid">
+      <div class="shift-col">
+        <div class="shift-col-label">Before</div>
+        <ul>
+          <li>Disconnected announcements</li>
+          <li>Channel-by-channel execution</li>
+          <li>Staff-dependent delivery</li>
+        </ul>
+      </div>
+      <div class="shift-col">
+        <div class="shift-col-label to">After</div>
+        <ul>
+          <li>Narrative-driven weekly cycles</li>
+          <li>Multi-touchpoint reinforcement</li>
+          <li>System-supported execution</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-section" id="what-changed">
+    <div class="cs-section-label">What Changed</div>
+    <h2>Four Behavioral Levers<br/>Applied Systematically.</h2>
+
+    <h3>1. Unified Weekly Narrative</h3>
+    <p>
+      Each week operated as a coordinated system. Messaging aligned across services, events, and outreach — every channel reinforced the same "why now." Communication became directional, not informational. People didn't just receive information — they understood where they fit.
+    </p>
+
+    <h3>2. Reinforced Decision Cycles Across Channels</h3>
+    <p>Channels were assigned clear roles in the decision journey:</p>
+    <ul>
+      <li><strong>Social</strong> → awareness</li>
+      <li><strong>Email</strong> → clarity</li>
+      <li><strong>Livestream</strong> → reinforcement</li>
+      <li><strong>In-person</strong> → action</li>
+    </ul>
+
+    <div class="cs-callout">
+      <div class="cs-callout-label">Behavioral Lever: Trigger Timing vs. Intent</div>
+      <p>We shifted the primary email trigger to <strong>35 minutes before the live engagement</strong> — aligning with the transition window when users move from passive routines into Sunday intentions. This harnessed action bias and drove a <strong>+23% increase in livestream viewership</strong> without increasing send volume.</p>
+    </div>
+
+    <h3>3. Friction Reduction in Participation</h3>
+    <p>
+      The question became: "What's stopping someone from acting right now?" Every message was redesigned around a singular, clear next step. Messaging hierarchy was simplified. Timing and cadence became consistent.
+    </p>
+    <p>Read more about <a href="writing.html" class="cs-link">friction in decision-making →</a></p>
+
+    <h3>4. System-Based Execution</h3>
+    <p>
+      Execution moved from heroics to systems. Repeatable workflows replaced one-offs. Volunteers worked inside defined roles. Reliance on individual talent decreased.
+    </p>
+
+    <div class="cs-callout">
+      <div class="cs-callout-label">Behavioral Playbook: System over Skill</div>
+      <p>A "zero-barrier" execution checklist translated the strategy into a simple workflow. Volunteers could keep four channels aligned to the same behavioral logic without constant oversight — while the audience experienced fewer cognitive demands at each touchpoint.</p>
+    </div>
+  </div>
+
+  <div class="cs-section" id="outcomes">
+    <div class="cs-section-label">Outcomes · 3 Months</div>
+    <h2>Each Lift Mapped to<br/>a Specific Behavioral Lever.</h2>
+
+    <div class="outcomes-grid">
+      <div class="outcome-card">
+        <div class="outcome-num">+125%</div>
+        <div class="outcome-label">Organic Social Engagement</div>
+        <div class="outcome-note">Driven by unified narrative and clear channel roles</div>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-num">+20%</div>
+        <div class="outcome-label">First-Time Participation</div>
+        <div class="outcome-note">Tied to friction reduction and behavior-specific CTAs</div>
+      </div>
+      <div class="outcome-card">
+        <div class="outcome-num">+23%</div>
+        <div class="outcome-label">Livestream Viewership</div>
+        <div class="outcome-note">Directly linked to the 35-minute trigger timing shift</div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;">Operationally: communication became consistent across channels, weekly execution became repeatable, and dependence on specific individuals decreased. Behaviorally: clearer follow-through from messaging to participation, more predictable engagement patterns, and reduced confusion around next steps.</p>
+  </div>
+
+  <div class="cs-section" id="insight">
+    <div class="cs-section-label">Key Insight</div>
+    <h2>More Communication Wasn't<br/>the Answer. Clearer Conditions Were.</h2>
+    <div class="cs-quote">
+      "Engagement doesn't increase because you communicate more. It increases when people understand why acting now makes sense — and how to act immediately."
+    </div>
+    <p>
+      Explore more <a href="writing.html" class="cs-link">behavioral marketing insights →</a>
+    </p>
+  </div>
+
+</article>
+```
+
+  </div>
+
+  <!-- FOOTER CTA -->
+
+  <div class="cs-footer-cta">
+    <div>
+      <div class="cs-footer-label">Next</div>
+      <div class="cs-footer-title">See All Case Studies</div>
+    </div>
+    <a href="work.html" class="btn btn--green">← Back to Work</a>
+  </div>
+
+  <footer>
+    <a href="index.html" class="footer-logo">Megan Oliver</a>
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Megan Oliver · Behavioral Marketing Strategist · meganoliver.com</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
