@@ -1,103 +1,33 @@
-/* 1. THE DICTIONARY (Variables) */
-:root {
-  --green: #2d5a4c;
-  --green-pale: #f4f7f6;
-  --cream: #fbf9f6;
-  --white: #ffffff;
-  --ink: #1a1a1a;
-  --ink-mid: #4a4a4a;
-  --ink-light: #888888;
-  --rule: rgba(0,0,0,0.1);
-  --nav-h: 80px;
-  --gold: #c5a059;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megan Oliver | Behavioral Marketing Strategist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  <header class="main-header">
+    <a href="index.html" class="nav-logo logo">Megan Oliver</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* 2. BASE RESET */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: var(--cream);
-  color: var(--ink);
-  line-height: 1.6;
-}
-
-/* 3. THE HEADER (Dark Bar) */
-.main-header {
-  height: var(--nav-h);
-  background: #1f2124;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 4rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-logo {
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2.5rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-/* 4. REVEAL UTILITIES (Fixes "Vanished" Content) */
-.reveal {
-  opacity: 1 !important;
-  transform: none !important;
-}
-
-/* 5. SECTIONS */
-.section { padding: 8rem 4rem; }
-.section--white { background: var(--white); }
-.section--dark { background: var(--ink); color: var(--cream); }
-.section--cream { background: var(--cream); }
-
-.section-eyebrow {
-  display: block;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3rem;
-  line-height: 1.1;
-  margin-bottom: 2rem;
-}
-
-/* 6. BUTTONS */
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  transition: all 0.3s;
-}
-
-.btn--green {
-  background: var(--green);
-  color: white;
-}
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Behavioral Marketing Strategist</p>
+      <h1 class="hero-title">Megan<br /><em>Oliver</em></h1>
+      <p class="hero-sub">Most campaigns are built around <strong>who the audience is.</strong> The ones that convert are built around <strong>the specific conditions</strong> that make that audience act.</p>
+    </div>
+  </section>
+</div>
+</body>
+</html>
