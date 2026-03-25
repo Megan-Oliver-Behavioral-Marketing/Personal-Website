@@ -1,38 +1,51 @@
-/* FORCE DARK HEADER */
+/* 1. THE HEADER BAR */
 header, .main-header {
-  background-color: #1f2124 !important;
+  background: #1f2124 !important; /* Forces the dark grey */
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   padding: 20px 60px !important;
   width: 100% !important;
+  min-height: 80px !important;
 }
 
-/* KILL THE BLUE LINKS */
-header a, nav a, .nav-links a {
-  color: white !important;
+/* THE LOGO & LINKS */
+header a, nav a, .logo {
+  color: #ffffff !important;
   text-decoration: none !important;
-  font-family: sans-serif !important;
+  font-family: 'DM Sans', sans-serif !important;
   font-size: 14px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
 }
 
-/* FIX THE LIST BULLETS */
-nav ul, .nav-links {
+nav ul {
   display: flex !important;
   list-style: none !important;
   gap: 30px !important;
   margin: 0 !important;
 }
 
-/* THE GREEN SIDEBAR BOX */
+/* 2. THE GREEN SIDEBAR BOX */
 body {
-  background-color: #fbf9f6;
-  margin: 0;
+  background-color: #fbf9f6 !important; /* Cream */
+  margin: 0 !important;
 }
 
-main {
+main, .content-wrapper {
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 80px 40px;
-  border-left: 10px solid #2d5a4c !important; /* This puts the green strip back */
+  margin: 40px auto !important;
+  padding: 60px !important;
+  background: white !important;
+  /* This creates that solid green box look on the left */
+  border-left: 15px solid #2d5a4c !important; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+}
+
+/* 3. THE BIG TEXT */
+h1 {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 5rem !important;
+  color: #1a1a1a !important;
+  margin-top: 0 !important;
 }
